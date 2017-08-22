@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Ago 12, 2017, 8:28:41 AM
     Author     : Josseline
 */
@@ -217,8 +217,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*------------------Estilos responsive------------------*/
+#navbar-principal {
+  background-color: lightgray;
+  border-color: lightgray;
 
-@media(min-width:480px) {
+}
+
+
+
+@media(min-width:456px) {
+
+    body {
+      overflow-x: hidden;
+    }
+
     .logo {
         font-size: 40px;
     }
@@ -226,41 +238,75 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 30px;
         margin: 5px 0;
     }
+
     .banner__txt {
         display: block;
         font-size: 18px;
         margin: 7px 0;
     }
+
     .info {
-        display: flex;
+
         justify-content: space-between;
         margin-top: -90px;
+        display: inline;
     }
     .info__columna {
-        width: 23%;
+        width: 450px;
+        margin-left: 50px;
+        text-align: center;
+
     }
     .info__titulo {
         font-size: 30px;
-        margin: 5px 0;
+        text-align: center;
     }
     .section__titulo {
         width: 100%;
     }
- 
+
     .footer .social [class^="icon-"] {
         margin: 0 10px;
     }
+
+    .info__img{
+  width: 300px;
+  margin-left: 100px;
+  }
 }
-@media(min-width:768px) {  
+@media(min-width:768px) {
     .banner__titulo {
         font-size: 50px;
     }
     .cursos__titulo {
         font-size: 40px;
     }
+
+    .info {
+      display: inline;
+    }
+
+    .info__columna {
+        width: 850px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .info__titulo {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .info__img {
+      width: 300px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
 }
 
-@media(min-width:1024px) {  
+@media(min-width:1024px) {
     .contenedor {
         width: 1000px;
     }
@@ -285,6 +331,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     .info {
         margin-top: -120px;
+        display: flex;
+        margin-left: -70px;
+
+
     }
     .info__columna {
         padding: 10px;
@@ -293,20 +343,14 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 40px;
         text-align: center;
     }
- 
+
+    .info__img {
+      width: 200px;
+      height: 200px;
+    }
+
 }
 
-@media(min-width:1280px) {
-    .contenedor {
-        width: 1200px;
-    }
-    .logo {
-        font-size: 60px;
-    }
-    .banner .contenedor {
-        top: 40%;
-    }
-    .info {
-        margin-top: -220px;
-    }
+.info__columna {
+  text-align: center;
 }
