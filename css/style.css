@@ -354,3 +354,24 @@ h1, h2, h3, h4, h5, h6 {
 .info__columna {
   text-align: center;
 }
+
+#registration-icon {
+  color: gray;
+  font-size: 100px;
+}
+
+.input-apellido {
+    box-shadow: 0px 0px 0px 1px gray;
+}
+
+.input-nombre {
+    box-shadow: 0px 0px 0px 1px gray;
+}
+
+.input-password {
+    box-shadow: 0px 0px 0px 1px gray;
+}
+
+.input-email {
+    box-shadow: 0px 0px 0px 1px gray;
+}
