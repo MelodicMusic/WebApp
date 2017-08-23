@@ -23,5 +23,6 @@ $('#demoForm').on('submit',function( event ){
 $('body').on( 'click', '.blackout, .modal', function(){
 	$('.blackout').fadeOut(function(){
 		$(".modal").fadeOut();
+		location.href = "index.html";
 	});
 });

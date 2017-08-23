@@ -18,6 +18,7 @@ h1, h3 {
 
 a {
 	color: #66f;
+	text-decoration-line: none;
 }
 
 .wrapper {
