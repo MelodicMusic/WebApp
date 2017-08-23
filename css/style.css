@@ -355,6 +355,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 
 /*------------------Login-----------*/
 body .imagen-fondo{
@@ -429,4 +430,25 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+=======
+#registration-icon {
+  color: gray;
+  font-size: 100px;
+}
+
+.input-apellido {
+    box-shadow: 0px 0px 0px 1px gray;
+}
+
+.input-nombre {
+    box-shadow: 0px 0px 0px 1px gray;
+}
+
+.input-password {
+    box-shadow: 0px 0px 0px 1px gray;
+}
+
+.input-email {
+    box-shadow: 0px 0px 0px 1px gray;
+>>>>>>> ab96b20b40cad0f13f451a810c99560c43927957
 }
