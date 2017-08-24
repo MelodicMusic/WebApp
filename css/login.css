@@ -16,3 +16,17 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
+button:hover {
+    opacity: 0.8;
+}
+
+.contenido-principal {
+  border: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 700px;
+  height: 700px;
+  color: white;
+  position: absolute;
+  top: 20%;
+}
