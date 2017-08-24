@@ -304,6 +304,7 @@
         margin-right: auto;
       }
 
+<<<<<<< HEAD
   }
 
   @media(min-width:1024px) {
@@ -473,3 +474,10 @@
       box-shadow: 0px 0px 0px 1px gray;
   >>>>>>> ab96b20b40cad0f13f451a810c99560c43927957
   }
+=======
+}
+
+.info__columna {
+  text-align: center;
+}
+>>>>>>> 6ab300d63172bd20e9b51b4330e34c90ec6cad2a
