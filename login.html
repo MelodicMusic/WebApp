@@ -1,38 +1,47 @@
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <meta charset="utf-8">
-          <link rel="stylesheet" href="css/style.css"/>
-          <title></title>
-        </head>
-        <body >
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css"/>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-glyphicons.css"></link>
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css"></link>
+  <LINK REL="stylesheet" TYPE="text/css" HREF="estilos.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body >
 
-            <img src="http://www.uib.no/sites/w3.uib.no/files/styles/content_main/public/media/colourbox5524468.jpg?itok=DzdW-kBG&timestamp=1392976242" alt="fondo de pantalla" class="imagen-fondo">
+  <img src="http://www.uib.no/sites/w3.uib.no/files/styles/content_main/public/media/colourbox5524468.jpg?itok=DzdW-kBG&timestamp=1392976242" alt="fondo de pantalla" class="imagen-fondo">
+  <div class="container">
+    <div class="login_panel">
+      <form action="/action_page.php" class="form_login">
+        <div class="imgcontainer">
+          <img src="https://i1.wp.com/salliebingham.com/wp-content/themes/sallieb/images/user_gravitar.png?ssl=1" alt="Usuario" class="img_usuario">
+        </div>
 
-<div class="login_panel">
-  <form action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="https://i1.wp.com/salliebingham.com/wp-content/themes/sallieb/images/user_gravitar.png?ssl=1" alt="Usuario" class="img_usuario">
+        <div class="container_login">
+          <label><b>Correo</b></label>
+          <input type="text" placeholder="Ingrese Correo" name="uname" required>
+
+          <label><b>Contraseña</b></label>
+          <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
+
+          <button type="submit">Ingresar</button>
+          <input type="checkbox" checked="checked"> Recordarme
+        </div>
+
+        <div class="container" style="background: #333">
+          <button type="button" class="cancelbtn">Cancelar</button>
+          <span class="psw"><a href="#">Registrarse</a></span>
+        </div>
+      </form>
     </div>
-
-    <div class="container">
-      <label><b>Correo</b></label>
-      <input type="text" placeholder="Ingrese Correo" name="uname" required>
-
-      <label><b>Contraseña</b></label>
-      <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
-
-      <button type="submit">Ingresar</button>
-      <input type="checkbox" checked="checked"> Recordarme
-    </div>
-
-    <div class="container" style="background: #333">
-      <button type="button" class="cancelbtn">Cancelar</button>
-      <span class="psw"><a href="#">Registrarse</a></span>
-    </div>
-  </form>
-</div>
+  </div>
 
 
+</body>
 
-      </html>
+</html>
