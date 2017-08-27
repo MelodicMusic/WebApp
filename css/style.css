@@ -216,12 +216,26 @@
       text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff;
   }
 
-  /*------------------Estilos responsive------------------*/
-  #navbar-principal {
-    background-color: lightgray;
-    border-color: lightgray;
 
-  }
+  /*NavBar de Bootstrap*/
+
+    #navbar-principal {
+      background-color: black;
+      border-color: black;
+
+    }
+
+    #input-navbar {
+      width: 350px;
+      margin-left: 100px;
+    }
+
+    #submit-navbar {
+      width: 70px;
+    }
+
+  /*------------------Estilos responsive------------------*/
+
 
 
 
@@ -304,7 +318,6 @@
         margin-right: auto;
       }
 
-<<<<<<< HEAD
   }
 
   @media(min-width:1024px) {

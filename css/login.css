@@ -108,3 +108,20 @@ ul.lista-productos li p span {
 .boton:hover{
   color: rgba(128, 1 , 195, 1);
 }
+
+/*NavBar*/
+
+#navbar-principal {
+  background-color: black;
+  border-color: black;
+
+}
+
+#input-navbar {
+  width: 350px;
+  margin-left: 100px;
+}
+
+#submit-navbar {
+  width: 70px;
+}
