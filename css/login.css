@@ -21,12 +21,90 @@ button:hover {
     opacity: 0.8;
 }
 
-.contenido-principal {
-  border: 3px;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 700px;
-  height: 700px;
+#user-img {
+  font-size: 100px;
+  color: rgba(160, 13, 23, 1);
+  margin-left: 220px;
+  margin-right: auto;
+}
+
+.fondo-registration {
+  background-image: url(http://www.telemundo.com/sites/nbcutelemundo/files/images/gallery/2016/09/15/microfono-solitario-escenario.jpg);
+}
+
+label {
   color: white;
-  position: absolute;
-  top: 20%;
+}
+
+/*Parte de html de ventas*/
+
+.body-ventas {
+  height: 100%;
+  font-family: arial, helvetica, sans-serif;
+  background: rgba(160, 13, 23, 1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-ventas {
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+div.hero-ventas img {
+  width: 100%;
+}
+
+.texto-nuestros-productos {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+ul.lista-productos li {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.lista-productos li img {
+  border: 10px solid rgba(70, 13, 23, 0.45);
+  height: 160px;
+  width: 160px;
+}
+
+ul.lista-productos li img:hover {
+  border: 10px solid rgba(70, 13, 23, 1);
+}
+
+ul.lista-productos li p {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+ul.lista-productos li p span {
+  font-size: 30px;
+  color: #ffce00;
+}
+
+.boton {
+  background-color: #ffce00;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(128, 1 , 195, 0.8);
+  font-size: 18px;
+}
+
+.boton:hover{
+  color: rgba(128, 1 , 195, 1);
 }
