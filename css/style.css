@@ -56,6 +56,15 @@
   .topnav .icon {
       display: none;
   }
+
+ .btn-default{
+   color: white !important;
+   border-color: black!important;
+    background-color: rgba(160, 13, 23, 1) !important;
+  }
+  form-group{
+    background-color: #333 !important;
+  }
   /*-------------Generales----------------------*/
   * {
       box-sizing: border-box;
@@ -380,10 +389,10 @@
 
   .container {
       border: 3px;
-      background-color: rgba(0, 0, 0, 0.4);
       width: 500px;
       color: white;
       margin-top: 5% !important;
+      margin-left: 250px !important;
 
 
   }
@@ -439,6 +448,12 @@
       padding-top: 16px;
   }
 
+.ingresar{
+  float: right;
+  padding-top: 16px;
+  margin-right: 100px;
+
+}
   @media screen and (max-width: 456px) {
       span.psw {
           display: block;
