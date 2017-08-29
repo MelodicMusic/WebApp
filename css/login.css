@@ -41,7 +41,7 @@ label {
 .body-ventas {
   height: 100%;
   font-family: arial, helvetica, sans-serif;
-  background: rgba(160, 13, 23, 1);
+  background: gray;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
