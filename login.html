@@ -11,6 +11,17 @@
   <link rel="stylesheet" href="css/login.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" >
+  function functionPrincipal(){
+    window.location="principal.html";
+  }
+
+  function functionIndex(){
+    window.location="index.html";
+  }
+  </script>
+
 </head>
 <body class="fondoPrincipal" >
 
@@ -24,17 +35,17 @@
           <img src="https://i1.wp.com/salliebingham.com/wp-content/themes/sallieb/images/user_gravitar.png?ssl=1" alt="Usuario" class="img_usuario">
         </div>
         <div class="container_login">
-          <label><b>Correo</b></label>
+          <label><b>Email</b></label>
           <input type="text" placeholder="Ingrese Correo" name="uname" required>
 
-          <label><b>Contraseña</b></label>
+          <label><b>Password</b></label>
           <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
 
-          <button type="submit">Ingresar</button>
-          <input type="checkbox" checked="checked"> Recordarme
+          <button type="button" onclick="functionPrincipal()">Submit</button>
+          <input type="checkbox" checked="checked"> Remember
         </div>
         <div class="container_cancel" style="background: #333">
-          <button type="button" class="cancelbtn">Cancelar</button>
+          <button type="button" onclick="functionIndex()" class="cancelbtn">Cancel</button>
           <span class="psw"><a href="registration.html">Registrarse</a></span>
         </div>
       </div>

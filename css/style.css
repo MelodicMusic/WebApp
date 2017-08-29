@@ -93,6 +93,7 @@
   .contenedor {
       margin: auto;
       width: 99%;
+
   }
 
   /*-------------------Estilos del header-------------------*/
@@ -131,7 +132,7 @@
 
   .banner .contenedor {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%) translateY(-40%);
       width: 100%;
