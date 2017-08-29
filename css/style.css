@@ -62,6 +62,14 @@
    border-color: black!important;
     background-color: rgba(160, 13, 23, 1) !important;
   }
+
+  .btn-list{
+    color: white !important;
+    border-color: black!important;
+     background-color: rgba(160, 13, 23, 1) !important;
+     width: 150px !important;
+   }
+
   form-group{
     background-color: #333 !important;
   }
