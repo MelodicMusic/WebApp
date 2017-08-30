@@ -11,9 +11,9 @@
   @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
 
-  /*------------------Estilos graficos------------------*/
+  /*------------------Estilos ------------------*/
   .fondoPrincipal{
-      background-image: url("http://www.telemundo.com/sites/nbcutelemundo/files/images/gallery/2016/09/15/microfono-solitario-escenario.jpg");
+    background-image: url("http://www.telemundo.com/sites/nbcutelemundo/files/images/gallery/2016/09/15/microfono-solitario-escenario.jpg");
   }
   .panel{
       background-color: rgba(255, 255, 255, 0.6) !important;
