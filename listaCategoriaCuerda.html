@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Melodic  Music</title>
+  <title>Lista General</title>
   <link rel="stylesheet" href="css/icons.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
@@ -14,20 +14,33 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, intial-scale=1"></meta>
 
-<script type="text/javascript" >
-function functionVentas(){
-  window.location="ventas.html";
+  <script type="text/javascript" >
 
-}
-function functionCategoria(){
-  window.location="listaCategoria.html";
+  function functionViento(){
+    window.location="listaCategoriaViento.html";
+      }
+      function functionCuerda(){
+        window.location="listaCategoriaCuerda.html";
+          }
+          function functionPercusion(){
+            window.location="listaCategoriaPercusion.html";
+              }
+              function functionElectricos(){
+                window.location="listaCategoriaElectico.html";
+                  }
+                  function functionVentas(){
+                    window.location="ventas.html";
 
-}
-function functionGeneral(){
-  window.location="listaGeneral.html";
+                  }
+                  function functionCategoria(){
+                    window.location="listaCategoria.html";
 
-}
-</script>
+                  }
+                  function functionGeneral(){
+                    window.location="listaGeneral.html";
+
+                  }
+  </script>
 
 </head>
 <body>
@@ -46,8 +59,8 @@ function functionGeneral(){
                 <button type="button" class="btn btn-list" onclick="functionGeneral()"id="submit-navbar">Lista General</button>
                 <button type="button" class="btn btn-list" onclick="functionCategoria()" id="submit-navbar">Lista por Tipo</button>
                 <button type="button" class="btn btn-list" id="submit-navbar">Lista por marca</button>
-                        <button type="button" class="btn btn-list"onclick="functionVentas()" id="submit-navbar">Compra</button>
-                  <span class="ingresar"><a href="index.html">Cerrar Sesion</a></span>
+                <button type="button" class="btn btn-list"onclick="functionVentas()" id="submit-navbar">Compra</button>
+                <span class="ingresar"><a href="index.html">Cerrar Sesion</a></span>
 
                 <input type="text" class="form-control" placeholder="Search" id="input-navbar">
 
@@ -59,7 +72,9 @@ function functionGeneral(){
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
   <div class="banner">
+
     <div class="slider">
       <ul>
         <li>
@@ -76,9 +91,59 @@ function functionGeneral(){
         </li>
       </ul>
     </div>
+
     <div class="contenedor">
-      <img src="C:\Users\Josseline\Documents\GitHub\WebApp\img\logo.png" alt=""/>
-      <p class="banner__txt">La mejor tienda de musica</p>
+      <div class="container" id="lista_general">
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <button type="button" class="btn btn-list" onclick="functionViento()" id="submit-navbar">Viento</button>
+            <button type="button" class="btn btn-list" onclick="functionCuerda()"id="submit-navbar">Cuerda</button>
+            <button type="button" class="btn btn-list" onclick="functionPercusion()"id="submit-navbar">Percusion</button>
+            <button type="button" class="btn btn-list" onclick="functionElectricos()"id="submit-navbar">Electricos</button>
+           </div>
+        </form>
+        <h1>Lista por Categoria</h1>
+        <p></p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Categority</th>
+              <th>Brand</th>
+              <th>Description</th>
+              <th>Imagen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Guitarra</td>
+              <td>60.000</td>
+              <td>Cuerda</td>
+              <td>Les Paul</td>
+              <td>Color: amarillo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Guitarra</td>
+              <td>60.000</td>
+              <td>Cuerda</td>
+              <td>Les Paul</td>
+              <td>Color: amarillo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Guitarra</td>
+              <td>60.000</td>
+              <td>Cuerda</td>
+              <td>Les Paul</td>
+              <td>Color: amarillo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <main class="main">

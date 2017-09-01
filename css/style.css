@@ -125,7 +125,7 @@
 
   .banner {
       margin-top: -60px;
-      position: relative;
+    /*  position: relative;*/
       z-index: -1000;
       margin-bottom: 20px;
   }
@@ -516,4 +516,10 @@
 
 .info__columna {
   text-align: center;
+}
+
+/*---------listageneral-----*/
+#lista_general{
+background-color: rgba(255, 255, 255, 0.8);
+color: black;
 }
