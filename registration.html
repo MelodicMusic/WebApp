@@ -27,32 +27,31 @@
           <div class="row">
           <div class="col-md-6">
             <label>Ingrese su nombre:</label>
-            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="nombre" placeholder="Nombre" id="name">
           </div>
           <div class="col-md-6">
             <label>Ingrese sus apellidos:</label>
-            <input type="text" name="apellidos" placeholder="Apellidos">
+            <input type="text" name="apellidos" placeholder="Apellidos" id="lastName">
           </div>
           </div>
           <label for="number">Card Number</label>
           <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="XXXX  XXXX  XXXX  XXXX"  onkeypress="return valida(event)">
 
           <label>Ingrese su correo:</label>
-          <input type="email" name="correo" placeholder="ejemplo@correo.com">
+          <input type="email" name="correo" placeholder="ejemplo@correo.com" id="email">
 
           <label>Ingrese su contraseña:</label>
-          <input type="password" name="password" placeholder="***********">
+          <input type="password" name="password" placeholder="***********" id="password">
 
-          <label>Ingrese la dirección de domicilio:</label>
-          <input type="text" name="direccion" placeholder="300 metros norte .....">
+          <label>Confirma Contraseña:</label>
+          <input type="password" name="password-reiteraddo" placeholder="***********" id="passwordConfirm">
 
-          <button type="submit" name="registrar">Registrar</button>
+          <button type="submit" name="registrar" id="registrar">Registrar</button>
         </div>
         </div>
       </div>
     </div>
-    <script src="js/javascript.js">
-
-    </script>
+    <script src="js/javascript.js"></script>
+    <script src="js/main.js"></script>
     <body>
   </html>
