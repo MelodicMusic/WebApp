@@ -125,7 +125,7 @@
 
   .banner {
       margin-top: -60px;
-      position: relative;
+    /*  position: relative;*/
       z-index: -1000;
       margin-bottom: 20px;
   }
@@ -518,7 +518,14 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
+/*---------listageneral-----*/
+#lista_general{
+background-color: rgba(255, 255, 255, 0.8);
+color: black;
+=======
 .Usuario-Sesion {
   color: white;
 
+>>>>>>> 23394b8d3ad33a1dde5bf59699be6f8384002ae8
 }

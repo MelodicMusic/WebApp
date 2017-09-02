@@ -15,18 +15,31 @@
   <meta name="viewport" content="width=device-width, intial-scale=1"></meta>
 
   <script type="text/javascript" >
-  function functionVentas(){
-    window.location="ventas.html";
 
-  }
-  function functionCategoria(){
-    window.location="listaCategoria.html";
+  function functionViento(){
+    window.location="listaCategoriaViento.html";
+      }
+      function functionCuerda(){
+        window.location="listaCategoriaCuerda.html";
+          }
+          function functionPercusion(){
+            window.location="listaCategoriaPercusion.html";
+              }
+              function functionElectricos(){
+                window.location="listaCategoriaElectico.html";
+                  }
+                  function functionVentas(){
+                    window.location="ventas.html";
 
-  }
-  function functionGeneral(){
-    window.location="listaGeneral.html";
+                  }
+                  function functionCategoria(){
+                    window.location="listaCategoria.html";
 
-  }
+                  }
+                  function functionGeneral(){
+                    window.location="listaGeneral.html";
+
+                  }
   </script>
 
 </head>
@@ -60,6 +73,7 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div class="banner">
+
     <div class="slider">
       <ul>
         <li>
@@ -76,10 +90,19 @@
         </li>
       </ul>
     </div>
+
     <div class="contenedor">
       <div class="container" id="lista_general">
-        <h2>General List</h2>
-        <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <button type="button" class="btn btn-list" onclick="functionViento()" id="submit-navbar">Viento</button>
+            <button type="button" class="btn btn-list" onclick="functionCuerda()"id="submit-navbar">Cuerda</button>
+            <button type="button" class="btn btn-list" onclick="functionPercusion()"id="submit-navbar">Percusion</button>
+            <button type="button" class="btn btn-list" onclick="functionElectricos()"id="submit-navbar">Electricos</button>
+           </div>
+        </form>
+        <h1>Lista por Categoria</h1>
+        <p></p>
         <table class="table">
           <thead>
             <tr>
