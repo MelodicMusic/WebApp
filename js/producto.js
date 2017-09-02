@@ -1,3 +1,7 @@
+//El siguiente codigo lo que realiza es el consumo del servicio de buscar los
+//productos por una palabra ingresada en un input con el id input-navbar dentro del html
+//la idea es recorrerlo con un for para que muestre los datos necesarios provenientes del JSON
+
 $(document).ready(function(){
 
   var urlPrincipal = "http://melodicmusicserver-env.us-west-2.elasticbeanstalk.com/";

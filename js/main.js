@@ -1,4 +1,7 @@
 //LOGIN USER
+//Codigo del AJAX que consume el servicio de login del usuario
+//La idea del codigo es poder validar los datos que provienen del JSON
+
 $(document).ready(function(){
 
   var urlPrincipal = "http://melodicmusicserver-env.us-west-2.elasticbeanstalk.com/";
@@ -27,16 +30,21 @@ $(document).ready(function(){
           window.localStorage.setItem('id', result._id);
           window.location = "principal.html";
         }
-        //console.log(status == 'success');
+
       },
       error(xhr, status, error){
         console.log("CON ERROR");
-        //console.log(status == 'error');
+
         console.log('tipo de error: '+error);
       }
     }); //Ajax del Login del usuario
 
   }); //Boton de la aaccion de LogIn
+
+  //Codigo para registrar un nuevo usuario, la idea es poder
+  //registrar un nuevo cliente a la hora de realizar la accion por medio
+  //de la funcion del clic del boton id="registrar"
+
 
   $("#registrar").on("click", function(e){
 
@@ -46,8 +54,7 @@ $(document).ready(function(){
     let password = $("#password").val();
 
   	$.ajax({
-  		//data: JSON.stringify({"name":"Adrian", "lastName": "Serrano Brenes", "email":"adrian-3105@hotmail.com", "password":"1234", "role":"admin"}),
-      data: JSON.stringify({"name": nombre, "lastName": lastName, "email": email, "password": password, "role": "user"}),
+  		data: JSON.stringify({"name": nombre, "lastName": lastName, "email": email, "password": password, "role": "user"}),
       url: urlPrincipal + 'api/User',
   		type: 'POST',
   		contentType: "application/json",
