@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, intial-scale=1"></meta>
+  <!--<meta name="viewport" content="width=device-width, intial-scale=1"></meta> -->
 
   <script type="text/javascript" >
 
@@ -57,7 +57,7 @@
             <form class="navbar-form navbar-left">
               <div class="form-group">
                 <button type="button" class="btn btn-list" onclick="functionGeneral()"id="submit-navbar">Lista General</button>
-                <button type="button" class="btn btn-list" onclick="functionCategory()" id="submit-navbar">Lista por Tipo</button>
+                <button type="button" class="btn btn-list" onclick="functionCategory()" id="submit-navbar">Lista por Categoria</button>
                 <button type="button" class="btn btn-list" id="submit-navbar">Lista por marca</button>
                 <button type="button" class="btn btn-list"onclick="functionBuy()" id="submit-navbar">Compra</button>
                 <span class="ingresar"><a href="index.html">Cerrar Sesion</a></span>
@@ -96,14 +96,15 @@
       <div class="container" id="lista_general">
         <form class="navbar-form navbar-left">
           <div class="form-group">
-            <button type="button" class="btn btn-list" onclick="functionWind()" id="submit-navbar">Viento</button>
-            <button type="button" class="btn btn-list" onclick="functionRope()"id="submit-navbar">Cuerda</button>
-            <button type="button" class="btn btn-list" onclick="functionPercussion()"id="submit-navbar">Percusion</button>
-            <button type="button" class="btn btn-list" onclick="functionElectronic()"id="submit-navbar">Electricos</button>
+            <button type="button" class="btn btn-list" id="submit-Viento">Viento</button>
+            <button type="button" class="btn btn-list" onclick="functionRope()"id="submit-Cuerda">Cuerda</button>
+            <button type="button" class="btn btn-list" onclick="functionPercussion()"id="submit-Percusion">Percusion</button>
+            <button type="button" class="btn btn-list" onclick="functionElectronic()"id="submit-Electricos">Electricos</button>
            </div>
         </form>
         <h1>Lista por Categoria</h1>
         <p></p>
+
         <table class="table">
           <thead>
             <tr>
@@ -116,13 +117,33 @@
               <th>Imagen</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="lista-productos">
 
           </tbody>
         </table>
       </div>
     </div>
   </div>
+
+<!--
+  <div class="productos">
+      <ul class="lista-productos" id="lista-productos">
+
+      <li>
+        <img src="http://musicandote.com/wp-content/uploads/2014/10/Violin.jpg" alt="Camisa HTML5" class="busquedas">
+        <p>Violin<span>$25</span></p>
+        <a href="#" class="boton">Comprar</a>
+      </li>
+
+
+    </ul>
+
+  </div>
+    -->
+
+
+
+
   <main class="main">
     <div class="contenedor">
       <section class="info">
@@ -173,5 +194,6 @@ function handleLoginRequest(xhr, status, args) {
   }
 }
 </script>
+<script src="js/list.js"></script>
 </body>
 </html>
