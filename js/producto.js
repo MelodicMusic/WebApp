@@ -26,9 +26,10 @@ $(document).ready(function(){
        for (let i = 0; i < length; i++) {
         listaProductos.append(`
           <li>
-               <img src="http://musicandote.com/wp-content/uploads/2014/10/Violin.jpg" class="busquedas">
+               <img src="`+result[i].imageUrl+`" class="busquedas">
                <p>`+result[i].name+`<span> &cent`+result[i].price+`</span></p>
                <a href="#" class="boton" id="`+result[i]._id+`">Comprar</a>
+               <p>`+(result[i].price)/ ("http://wsIndicadoresEconomicos.indicadoreseconomicos.bccr.fi.cr")+`</p>
           </li>
 					`);
 
