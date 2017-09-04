@@ -9,6 +9,9 @@ $(document).ready(function(){
 
  $("#submit-navbar").on("click", function(e){
 
+  let listaProductos = $('#lista-productos');
+  listaProductos.empty();
+
    let busquedaProducto = $("#input-navbar").val();
    $.ajax({
      //url: 'http://localhost:57849/api/Product/getProductsByName/Guit',
@@ -21,7 +24,7 @@ $(document).ready(function(){
        console.log(result);
 
        let length = result.length;
-       let listaProductos = $('#lista-productos');
+       
 
        for (let i = 0; i < length; i++) {
         listaProductos.append(`
