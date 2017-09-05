@@ -7,12 +7,12 @@ $(document).ready(function(){
   var urlPrincipal = "http://melodicmusicserver-env.us-west-2.elasticbeanstalk.com/";
 
 
- $("#submit-Viento").on("click", function(e){
+ $("#submit-Electronic").on("click", function(e){
 
   let listaProductos = $('#lista-productos');
   listaProductos.empty();
 
-   let busquedaProducto = "Viento";
+   let busquedaProducto = "Electricos";
          $.ajax({
      //url: 'http://localhost:57849/api/Product/getProductsByName/Guit',
      url: urlPrincipal + 'api/Product/getProductsByCategory/'+busquedaProducto,

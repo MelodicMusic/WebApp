@@ -12,34 +12,25 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, intial-scale=1"></meta>
+  <!--<meta name="viewport" content="width=device-width, intial-scale=1"></meta> -->
 
   <script type="text/javascript" >
 
-  function functionWind(){
+  function functionBuy(){
+    window.location="buy.html";
+
+  }
+  function functionCategory(){
     window.location="categoryList.html";
-      }
-      function functionRope(){
-        window.location="categoryListRope.html";
-          }
-          function functionPercussion(){
-            window.location="categoryListPercussion.html";
-              }
-              function functionElectronic(){
-                window.location="categoryListElectronic.html";
-                  }
-                  function functionBuy(){
-                    window.location="buy.html";
 
-                  }
-                  function functionCategory(){
-                    window.location="categoryList.html";
+  }
+  function functionGeneral(){
+    window.location="generalList.html";
 
-                  }
-                  function functionGeneral(){
-                    window.location="generalList.html";
-
-                  }
+  }
+  function functionPrice(){
+    window.location="priceList.html";
+  }
   </script>
 
 </head>
@@ -56,9 +47,9 @@
 
             <form class="navbar-form navbar-left">
               <div class="form-group">
-                <button type="button" class="btn btn-list" onclick="functionGeneral()"id="submit-navbar">Lista General</button>
+                <button type="button" class="btn btn-list" onclick="functionGeneral()">Lista General</button>
                 <button type="button" class="btn btn-list" onclick="functionCategory()" id="submit-navbar">Lista por Categoria</button>
-                <button type="button" class="btn btn-list" id="submit-navbar">Lista por marca</button>
+                <button type="button" class="btn btn-list" onclick="functionPrice()" id="submit-navbar">Lista por Precio</button>
                 <button type="button" class="btn btn-list"onclick="functionBuy()" id="submit-navbar">Compra</button>
                 <span class="ingresar"><a href="index.html">Cerrar Sesion</a></span>
 
@@ -94,58 +85,36 @@
 
     <div class="contenedor">
       <div class="container" id="lista_general">
-        <form class="navbar-form navbar-left">
-          <div class="form-group">
-            <button type="button" class="btn btn-list" onclick="functionWind()" id="submit-Viento">Viento</button>
-            <button type="button" class="btn btn-list" onclick="functionRope()"id="submit-Cuerda">Cuerda</button>
-            <button type="button" class="btn btn-list" onclick="functionPercussion()"id="submit-Percusion">Percusion</button>
-            <button type="button" class="btn btn-list" onclick="functionElectronic()"id="submit-Electricos">Electricos</button>
-           </div>
-        </form>
-        <h1>Lista por Categoria</h1>
+        <div class="form-group" id="inputPrice">
+          <label for="usr">Precio Minimo:</label>
+          <input type="text" class="form-control" id="priceMin">
+          <label for="pwd">Precio Maximo:</label>
+          <input type="text" class="form-control" id="priceMax">
+          <button type="button" class="btn btn-list" id="submit-Price">Cargar Datos</button>
+        </div>
+        <h1>Lista por Precio</h1>
         <p></p>
+
         <table class="table">
           <thead>
             <tr>
               <th>Id</th>
-              <th>Name</th>
-              <th>Price</th>
-              <th>Categority</th>
-              <th>Brand</th>
-              <th>Description</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Categoria</th>
+              <th>Marca</th>
+              <th>Descripcion</th>
               <th>Imagen</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Guitarra</td>
-              <td>60.000</td>
-              <td>Cuerda</td>
-              <td>Les Paul</td>
-              <td>Color: amarillo</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Guitarra</td>
-              <td>60.000</td>
-              <td>Cuerda</td>
-              <td>Les Paul</td>
-              <td>Color: amarillo</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Guitarra</td>
-              <td>60.000</td>
-              <td>Cuerda</td>
-              <td>Les Paul</td>
-              <td>Color: amarillo</td>
-            </tr>
+          <tbody id="lista-productos">
+
           </tbody>
         </table>
       </div>
     </div>
   </div>
+
   <main class="main">
     <div class="contenedor">
       <section class="info">
@@ -196,5 +165,6 @@ function handleLoginRequest(xhr, status, args) {
   }
 }
 </script>
+<script src="js/priceList.js"></script>
 </body>
 </html>
