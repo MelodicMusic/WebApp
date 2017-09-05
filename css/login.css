@@ -8,13 +8,18 @@ input[type=text], input[type=password], input[type="email"] {
 }
 
 button {
-    background: rgba(160, 13, 23, 1);
+    background: rgb(160, 13, 23);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+
+}
+
+span#registrarBoton {
+  color: white;
 }
 
 button:hover {
@@ -69,6 +74,7 @@ ul.lista-productos li {
   width: 20%;
   padding: 10px;
   text-align: center;
+  list-style: none;
 }
 
 ul.lista-productos li img {
@@ -90,23 +96,24 @@ ul.lista-productos li p {
 
 ul.lista-productos li p span {
   font-size: 30px;
-  color: #ffce00;
+  color: rgba(160, 13, 23, 0.5);
 }
 
 .boton {
-  background-color: #ffce00;
+  background-color: rgb(160, 13, 23);
   padding: 10px 30px;
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(128, 1 , 195, 0.8);
+  color: white;
   font-size: 18px;
 }
 
 .boton:hover{
-  color: rgba(128, 1 , 195, 1);
+  color: rgba(30, 13, 23, 0.45);
+  text-decoration: none;
 }
 
 /*NavBar*/

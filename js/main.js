@@ -50,11 +50,12 @@ $(document).ready(function(){
 
     let nombre = $("#name").val();
     let lastName = $("#lastName").val();
+    let cardNumber = $("#cardNumber").val();
     let email = $("#email").val();
     let password = $("#password").val();
 
   	$.ajax({
-  		data: JSON.stringify({"name": nombre, "lastName": lastName, "email": email, "password": password, "role": "user"}),
+  		data: JSON.stringify({"name": nombre, "lastName": lastName, "cardNumber": cardNumber, "email": email, "password": password, "role": "user"}),
       url: urlPrincipal + 'api/User',
   		type: 'POST',
   		contentType: "application/json",
@@ -62,6 +63,7 @@ $(document).ready(function(){
   		success: function(result,status,xhr){
   			console.log("EXITOSO");
   			console.log(result);
+        window.location = "login.html";
   			//console.log(status == 'success');
   		},
   		error(xhr, status, error){

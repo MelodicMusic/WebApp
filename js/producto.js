@@ -24,15 +24,15 @@ $(document).ready(function(){
        console.log(result);
 
        let length = result.length;
-       
+
 
        for (let i = 0; i < length; i++) {
         listaProductos.append(`
           <li>
                <img src="`+result[i].imageUrl+`" class="busquedas">
                <p>`+result[i].name+`<span> &cent`+result[i].price+`</span></p>
+               <p> $`+ ((result[i].price)/ (582)).toFixed(2) +`</p>
                <a href="#" class="boton" id="`+result[i]._id+`">Comprar</a>
-               <p>`+(result[i].price)/ ("http://wsIndicadoresEconomicos.indicadoreseconomicos.bccr.fi.cr")+`</p>
           </li>
 					`);
 
