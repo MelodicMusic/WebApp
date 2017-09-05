@@ -243,14 +243,10 @@
 
     }
 
-    #input-navbar {
-      width: 350px;
-      margin-left: 100px;
+    .pruebaUsuario {
+      margin-left: 10px;
     }
 
-    #submit-navbar {
-      width: 70px;
-    }
 
   /*------------------Estilos responsive------------------*/
 
@@ -523,8 +519,12 @@
 background-color: rgba(255, 255, 255, 0.7);
 color: black;
 }
+
 .Usuario-Sesion {
   color: white;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
 
 }
 
@@ -630,4 +630,26 @@ box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
 
 #inputPrice{
   width: 300px!important;
+}
+
+button #Usuario-Sesion {
+  background-color: black;
+}
+
+#pruebaCS {
+  margin-right: 25px;
+  margin-top: 0px;
+  font-size: 20px;
+  color: black;
+}
+
+.form-group ul li p {
+  color: white;
+  font-size: 25px;
+  margin-top: 7px;
+  margin-right: 20px;
+}
+
+.form-group ul li {
+  color: white;
 }
