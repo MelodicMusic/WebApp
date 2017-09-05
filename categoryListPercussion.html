@@ -15,18 +15,31 @@
   <meta name="viewport" content="width=device-width, intial-scale=1"></meta>
 
   <script type="text/javascript" >
-  function functionVentas(){
-    window.location="ventas.html";
 
-  }
-  function functionCategoria(){
-    window.location="listaCategoria.html";
+  function functionWind(){
+    window.location="categoryList.html";
+      }
+      function functionRope(){
+        window.location="categoryListRope.html";
+          }
+          function functionPercussion(){
+            window.location="categoryListPercussion.html";
+              }
+              function functionElectronic(){
+                window.location="categoryListElectronic.html";
+                  }
+                  function functionBuy(){
+                    window.location="buy.html";
 
-  }
-  function functionGeneral(){
-    window.location="listaGeneral.html";
+                  }
+                  function functionCategory(){
+                    window.location="categoryList.html";
 
-  }
+                  }
+                  function functionGeneral(){
+                    window.location="generalList.html";
+
+                  }
   </script>
 
 </head>
@@ -44,9 +57,9 @@
             <form class="navbar-form navbar-left">
               <div class="form-group">
                 <button type="button" class="btn btn-list" onclick="functionGeneral()"id="submit-navbar">Lista General</button>
-                <button type="button" class="btn btn-list" onclick="functionCategoria()" id="submit-navbar">Lista por Tipo</button>
+                <button type="button" class="btn btn-list" onclick="functionCategory()" id="submit-navbar">Lista por Categoria</button>
                 <button type="button" class="btn btn-list" id="submit-navbar">Lista por marca</button>
-                <button type="button" class="btn btn-list"onclick="functionVentas()" id="submit-navbar">Compra</button>
+                <button type="button" class="btn btn-list"onclick="functionBuy()" id="submit-navbar">Compra</button>
                 <span class="ingresar"><a href="index.html">Cerrar Sesion</a></span>
 
                 <input type="text" class="form-control" placeholder="Search" id="input-navbar">
@@ -59,7 +72,9 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
   <div class="banner">
+
     <div class="slider">
       <ul>
         <li>
@@ -76,10 +91,19 @@
         </li>
       </ul>
     </div>
+
     <div class="contenedor">
       <div class="container" id="lista_general">
-        <h2>General List</h2>
-        <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <button type="button" class="btn btn-list" onclick="functionWind()" id="submit-Viento">Viento</button>
+            <button type="button" class="btn btn-list" onclick="functionRope()"id="submit-Cuerda">Cuerda</button>
+            <button type="button" class="btn btn-list" onclick="functionPercussion()"id="submit-Percusion">Percusion</button>
+            <button type="button" class="btn btn-list" onclick="functionElectronic()"id="submit-Electricos">Electricos</button>
+           </div>
+        </form>
+        <h1>Lista por Categoria</h1>
+        <p></p>
         <table class="table">
           <thead>
             <tr>

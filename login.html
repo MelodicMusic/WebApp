@@ -17,6 +17,13 @@
   function functionIndex(){
     window.location="index.html";
   }
+
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
   </script>
 
 </head>
@@ -37,7 +44,7 @@
           <label><b>Password</b></label>
           <input type="password" placeholder="Ingrese Contraseña" name="psw" id="password" required>
 
-          <button type="button" id="ingresar">Ingresar</button>
+          <button type="button" id="ingresar">Ingresar</button onclick="setCookie(username,useremail,4)">
           <input type="checkbox" checked="checked"> Remember
         </div>
         <div class="container_cancel" style="background: #333">
