@@ -13,12 +13,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="js/javascript.js">
 
-
-
-</head>
+  </head>
   <body class="fondo-registration">
-
-    <div class="container">
+    <form name="formulario">
+      <div class="container">
 
       <div class="row">
         <div class="col-md-3"></div>
@@ -48,7 +46,7 @@
           <label>Confirma Contraseña:</label>
           <input type="password" name="password-reiteraddo" placeholder="***********" id="passwordConfirm" required>
 
-          <button type="submit" name="registrar" data-toggle="modal" data-target="#myModal"><span id="registrarBoton">Registrar</span></button>
+          <button type="button" name="registrar" id="botonRegistrar"><span id="registrarBoton">Registrar</span></button>
 
           <div class="modal fade" id="myModal" role="dialog">
               <div class="modal-dialog">
@@ -63,7 +61,7 @@
                     <p>Bienvenido a nuestra página de MelodicMusic, disfruta de ser parte de nuestra familia</p>
                   </div>
                   <div class="modal-footer">
-                    <button type="submit" class="btn btn-default" id="registrar" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" id="registrar" data-dismiss="modal">Close</button>
                   </div>
                 </div>
 
@@ -74,6 +72,7 @@
         </div>
       </div>
     </div>
+    </form>
     <script src="js/javascript.js"></script>
     <script src="js/main.js"></script>
     <body>

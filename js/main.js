@@ -46,34 +46,49 @@ $(document).ready(function(){
   //de la funcion del clic del boton id="registrar"
 
 
-  $("#registrar").on("click", function(e){
+  $("#botonRegistrar").on("click", function(e){
 
     let nombre = $("#name").val();
     let lastName = $("#lastName").val();
     let cardNumber = $("#cardNumber").val();
     let email = $("#email").val();
     let password = $("#password").val();
+    let passwordConfirm = $("#passwordConfirm").val();
 
-  	$.ajax({
-  		data: JSON.stringify({"name": nombre, "lastName": lastName, "cardNumber": cardNumber, "email": email, "password": password, "role": "user"}),
-      url: urlPrincipal + 'api/User',
-  		type: 'POST',
-  		contentType: "application/json",
-  		dataType: "json",
-  		success: function(result,status,xhr){
-  			console.log("EXITOSO");
-  			console.log(result);
-        window.location = "login.html";
-  			//console.log(status == 'success');
-  		},
-  		error(xhr, status, error){
-  			console.log("CON ERROR");
-  			console.log(status);
-  			console.log(error);
-  		}
-  	});  //Ajax para registrar a un usuario
+    if(nombre != '' && lastName != '' && cardNumber != '' && email != '' && password != '' && passwordConfirm != '' && (password == passwordConfirm)){
+
+      $.ajax({
+        data: JSON.stringify({"name": nombre, "lastName": lastName, "cardNumber": cardNumber, "email": email, "password": password, "role": "user"}),
+        url: urlPrincipal + 'api/User',
+        type: 'POST',
+        contentType: "application/json",
+        dataType: "json",
+        success: function(result,status,xhr){
+          console.log("EXITOSO");
+          console.log(result);
+
+          //console.log(status == 'success');
+        },
+        error(xhr, status, error){
+          console.log("CON ERROR");
+          console.log(status);
+          console.log(error);
+        }
+      });  //Ajax para registrar a un usuario
+
+        $("#myModal").removeClass("fade");
+        $("#myModal").addClass("show");
+
+      //  console.log("HOLA MUNDO");
+    } //fin del IF
+    else {
+      alert("DEBE COMPLETAR TODOS LOS CAMPOS");
+    }
 
   }); //Boton de la accion de registrar
 
+  $("#registrar").on("click", function(e){
+    window.location = "login.html";
+  });
 
 });
